@@ -1,0 +1,27 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "This Node.js command-line application takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrtalWikoff/Team-Profile-Generator.git"
+  },
+  "author": "Ortal Wikoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrtalWikoff/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/OrtalWikoff/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.2"
+  }
+}
