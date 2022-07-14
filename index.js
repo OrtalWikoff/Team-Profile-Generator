@@ -27,7 +27,7 @@ async function main() {
           let finalHTML = html.generateHtml(teamstr)
 
           //call generate function to generate the html template literal
-
+      
           writeFileAsync("./dist/index.html", finalHTML)
 
           //console.log(teamstr)
@@ -40,11 +40,10 @@ async function main() {
 
 async function prompt() {
      let responseDone = "";
-     let response = "";
      // prompt to collect input and use do while atleast one and do it number of times depending on the while condition
      do {
           try {
-                await inquirer.prompt([
+                 response = await inquirer.prompt([
                     {
                          type: "input",
                          name: "name",
@@ -125,3 +124,4 @@ async function prompt() {
 }
 //call function to run application on the server
 main();
+
