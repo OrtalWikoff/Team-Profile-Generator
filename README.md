@@ -3,6 +3,9 @@ I build a Node.js command-line application that takes in information about emplo
 
 Here is a link to a walkthrough video that demonstrates the functionality of the application:
 
+https://watch.screencastify.com/v/EJvJoSLln3QY3XgiSErO
+
+https://watch.screencastify.com/v/ZqylOmmAicA9ftSdWX7L
 
 
 Here is a screenshot of the application:

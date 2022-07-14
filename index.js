@@ -21,7 +21,7 @@ async function main() {
 
           for (let i = 0; i < teamArray.length; i++) {
                //template literal=``
-               teamstr = teamstr + html.genrateCard(teamArray[i]);
+               teamstr = teamstr + html.generateCard(teamArray[i]);
           }
 
           let finalHTML = html.generateHtml(teamstr)
@@ -43,7 +43,7 @@ async function prompt() {
      // prompt to collect input and use do while atleast one and do it number of times depending on the while condition
      do {
           try {
-                 response = await inquirer.prompt([
+                let response = await inquirer.prompt([
                     {
                          type: "input",
                          name: "name",

@@ -1,4 +1,4 @@
-const generateHtml= function (teamstr){
+ const generateHtml = function(teamstr){
     return `<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -8,63 +8,14 @@ const generateHtml= function (teamstr){
         <link rel="stylesheet" href="./style.css">
         <title>Team Profile Generator</title>
     
-    </head>
+        </head>
+    
     <body>
-            <h1>My Team</h1>
-    
-        <div class="body">
-     
-    <div class="card">
-     <div class="card-header">
-         <h2></h2>  
-         <h2>Manager</h2>
-         <hr>
-     </div>
-    
-     <div class="card-body">
-         <ul>
-             <li>ID:</li>
-             <li>Email:</li>
-             <li>Office Number:</li>
-         </ul>
-     </div>
-     </div>
-     
-     <div class="card">
-     <div class="card-header">
-         <h2></h2>  
-         <h2>Engineer</h2>
-         <hr>
-     </div>
-    
-     <div class="card-body">
-         <ul>
-             <li>ID:</li>
-             <li>Email:</li>
-             <li>Github Username:</li>
-         </ul>
-     </div>
-    
-     </div><div class="card">
-     <div class="card-header">
-         <h2></h2>  
-         <h2>Intern</h2>
-         <hr>
-     </div>
-    
-     <div class="card-body">
-         <ul>
-             <li>ID:</li>
-             <li>Email:</li>
-             <li>School:</li>
-         </ul>
-     </div>
-     </div> 
-     
-        </div>
-    
-    </div> 
-    
+   <div class=header>
+       <h1>My Team</h1>
+   </div>
+   <div class="container-body">
+         ${teamstr} 
     </body>
     
     </html>`
@@ -72,7 +23,7 @@ const generateHtml= function (teamstr){
 
 //generate the card emp = employee object
 
-const generateCard = function(emp) {
+ const generateCard = function(emp){
     //if else statement
     let roleInfo;
 
@@ -87,7 +38,7 @@ const generateCard = function(emp) {
     return `<div class="card">
 <div class="card-header">
 <h2>${emp.name}</h2>  
-<h2>${emp.title}</h2>
+<h2>${emp.role}</h2>
 <hr>
 </div>
 <div class="card-body">
@@ -100,6 +51,5 @@ const generateCard = function(emp) {
 </div>`
 }
 
-exports.generateHtml = generateHtml;
-exports.genrateCard = generateCard; 
-
+exports.generateHtml = generateHtml; 
+exports.generateCard = generateCard; 
